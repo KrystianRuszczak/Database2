@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>745</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>924</width>
+    <height>745</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Baza danych</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>881</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="mainmenu">
+     <widget class="QCommandLinkButton" name="change_page">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>330</y>
+        <width>172</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dalej</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_menu">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>160</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Baza danych</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="show_checkBox">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>340</y>
+        <width>221</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Wyświetl aktualną bazę danych</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="show">
+     <widget class="QLabel" name="show_p1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Aktualna baza danych</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="show_table">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>851</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+      </property>
+      <property name="dragEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>106</number>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Imię</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nazwisko</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Numer ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Wiek</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Miejscowość</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ulica</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Numer domu</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Kraj</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>20</y>
+        <width>401</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="wprowadz">
+         <property name="styleSheet">
+          <string notr="true">font: 10pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Szukaj</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="look_for"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="search_button">
+         <property name="text">
+          <string>OK</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="Anuluj_search">
+         <property name="text">
+          <string>Anuluj</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="filtruj_po">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>81</width>
+        <height>78</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Filtruj według</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="search_by">
+      <property name="geometry">
+       <rect>
+        <x>318</x>
+        <y>50</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Imię</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nazwisko</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Numer ID</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wiek</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Miejscowość</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ulica</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Numer domu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kraj</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="select_folder">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>540</y>
+        <width>81</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Eksportuj</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="imp_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>540</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Importuj</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_all">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>540</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wyczyść bazę</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sortuj">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>120</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sortuj</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="sort_najw_najm_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>120</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>najmniejszego/A-Z</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>największego/Z-A</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="sort_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>120</y>
+        <width>121</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Imię</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nazwisko</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Numer ID</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wiek</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Miejscowość</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ulica</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Numer domu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kraj</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>120</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Od:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_record_button">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>540</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj rekord</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_button">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>580</y>
+        <width>81</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edytuj rekord</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>570</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Numer ID:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="delete_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>580</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>0</number>
+      </property>
+      <property name="maximum">
+       <number>10000000</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_Button">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>580</y>
+        <width>81</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usuń rekord</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="return1">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>660</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Powrót do menu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="endprog">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>660</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Zakończ program</string>
+    </property>
+    <property name="icon">
+     <iconset theme="application-exit"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>924</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
