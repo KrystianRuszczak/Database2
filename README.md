@@ -7,10 +7,9 @@ The application retains all the functionalities of the original version of the d
 The introduced changes include:
 
 - Simplified and more intuitive user interface, providing more convenient operation and a compact layout of elements.
-
 - Support for importing and exporting data in various formats, such as JSON and CSV.
-
 - Possibility to sort records according to selected criteria.
+- Possibility to erase all records from database at once.
 
 Also included is the project documentation and MIT license file, due to the use of the json.hpp library by Niels Lohmann, which is covered by the MIT license.
 
