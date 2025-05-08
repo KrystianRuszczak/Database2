@@ -11,6 +11,7 @@
 #include <iosfwd>
 #include <limits>
 
+#include <sstream>
 //sleep
 //#include <windows.h>
 //#include <conio.h>
